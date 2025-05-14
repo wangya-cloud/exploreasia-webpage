@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreAsia Travel — 东南亚五日深度游</title>
+  <style>
+    /* —— 全局 & 布局 —— */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: "Microsoft YaHei", sans-serif;
+      color: #333;
+    }
+    main { flex: 1; }
+
+    /* —— 英雄区（Hero） —— */
+    .hero {
+      position: relative;
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .hero-content .price-info {
+      margin-bottom: 20px;
+    }
+    /* —— 醒目的嗨享价样式 —— */
+    .hero-content .hi-price {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.90);
+      color: #ff5722;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    .hero-content .btn {
+      padding: 12px 24px;
+      background: #FF6F6F;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;  
+      cursor: pointer;
+    }
+
+    /* —— 特色服务区（Features） —— */
+    .features {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 16px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 260px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .feature-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .feature-card .info {
+      padding: 16px;
+      flex: 1;
+    }
+    .feature-card .info h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    .feature-card .info p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* —— 页脚 —— */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 14px;
+    }
+    footer a { color: #ccc; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<main>
+  <!-- 主视觉在最上 -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>东南亚五日深度游</h1>
+      <p>探索神秘的热带海岛，享受无与伦比的奢华体验</p>
+      <div class="price-info">
+        <span class="hi-price">嗨享价：2999元/人</span>
+      </div>
+      <button class="btn">立即抢购</button>
+    </div>
+  </section>
+
+  <!-- 四张特色卡片紧随其下 -->
+  <section class="features">
+    <div class="feature-card">
+      <img src="hotel.jpg" alt="五星级酒店"/>
+      <div class="info">
+        <h3>五星级酒店</h3>
+        <p>当地最豪华度假村，私享泳池与Spa</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <img src="dining.jpg" alt="每日自助餐享受"/>
+      <div class="info">
+        <h3>每日精致自助餐</h3>
+        <p>国际美食任意品尝，无限畅享</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <img src="guide.jpg" alt="中文导游"/>
+      <div class="info">
+        <h3>中文贴心导游</h3>
+        <p>全程陪同，深入当地文化核心</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <img src="transport.jpg" alt="豪华交通"/>
+      <div class="info">
+        <h3>豪华专车接送</h3>
+        <p>专业司机，安全快捷，零等待</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 固定在底部的页脚 -->
+<footer>
+  ExploreAsia Travel © 2025 │ 服务热线：400-123-4567 │ 邮箱：info@exploreasia.travel
+</footer>
+
+<script>
+  // 打开时滚到顶部
+  window.onload = () => window.scrollTo(0, 0);
+</script>
+
+</body>
+</html>
