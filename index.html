@@ -31,6 +31,17 @@
       inset: 0;
       background: rgba(0,0,0,0.4);
     }
+    /* —— 左上角品牌名称 —— */
+    .hero-brand {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      color: #fff;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
     .hero-content {
       position: relative;
       text-align: center;
@@ -137,13 +148,14 @@
 <body>
 
 <main>
-  <!-- 主视觉在最上 -->
   <section class="hero">
+    <!-- 品牌名称 -->
+    <div class="hero-brand">ExploreAsia Travel</div>
     <div class="hero-content">
-      <h1>ExploreAsia Travel 东南亚旅游推荐</h1>
-      <p>五日东南亚游，探索神秘的热带海岛，享受无与伦比的体验</p>
+      <h1>富国岛三日游</h1>
+      <p>走进越南，探秘热带天堂，开启一场身心放松的岛屿之旅</p>
       <div class="price-info">
-        <span class="hi-price">嗨享价：3899元/人</span>
+        <span class="hi-price">嗨享价：4899元/人</span>
       </div>
       <button class="btn" onclick="location.href='booking.html'">立即预订</button>
     </div>
@@ -154,28 +166,28 @@
     <div class="feature-card">
       <img src="hotel.jpg" alt="五星级酒店"/>
       <div class="info">
-        <h3>五星级酒店</h3>
+        <h3>星级酒店</h3>
         <p>当地最豪华度假村，私享泳池与Spa</p>
       </div>
     </div>
     <div class="feature-card">
       <img src="dining.jpg" alt="每日自助餐享受"/>
       <div class="info">
-        <h3>每日精致自助餐</h3>
+        <h3>精致餐食</h3>
         <p>国际美食任意品尝，无限畅享</p>
       </div>
     </div>
     <div class="feature-card">
       <img src="guide.jpg" alt="中文导游"/>
       <div class="info">
-        <h3>中文贴心导游</h3>
+        <h3>中文导游</h3>
         <p>全程陪同，深入当地文化核心</p>
       </div>
     </div>
     <div class="feature-card">
       <img src="transport.jpg" alt="豪华交通"/>
       <div class="info">
-        <h3>豪华专车接送</h3>
+        <h3>豪华专车</h3>
         <p>专业司机，安全快捷，零等待</p>
       </div>
     </div>
